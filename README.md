@@ -21,8 +21,8 @@ After setting up the GitHub repo + TFC workspace, you must set a secret in your 
 
 | Name | Version |
 |------|---------|
-| <a name="provider_github"></a> [github](#provider\_github) | >= 4.1.0 |
-| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | >= 0.26.1 |
+| <a name="provider_github"></a> [github](#provider\_github) | 4.16.0 |
+| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.26.1 |
 
 ## Modules
 
@@ -55,6 +55,7 @@ No modules.
 | <a name="input_github_repo_visibility"></a> [github\_repo\_visibility](#input\_github\_repo\_visibility) | The GitHub repo's visibility (public, private, or internal) | `string` | `"public"` | no |
 | <a name="input_tfc_organization_name"></a> [tfc\_organization\_name](#input\_tfc\_organization\_name) | The name of the Terraform Cloud organization to which the workspace belongs | `string` | n/a | yes |
 | <a name="input_tfc_workspace_name"></a> [tfc\_workspace\_name](#input\_tfc\_workspace\_name) | The name of the workspace in Terraform Cloud | `string` | n/a | yes |
+| <a name="input_tfc_workspace_tags"></a> [tfc\_workspace\_tags](#input\_tfc\_workspace\_tags) | A list of tags to assign to the workspace | `list(string)` | `[]` | no |
 | <a name="input_tfc_workspace_terraform_version"></a> [tfc\_workspace\_terraform\_version](#input\_tfc\_workspace\_terraform\_version) | The version of Terraform to use during the workspace's runs | `string` | n/a | yes |
 
 ## Outputs
