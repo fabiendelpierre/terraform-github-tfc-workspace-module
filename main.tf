@@ -76,4 +76,5 @@ resource "tfe_workspace" "main" {
   name              = var.tfc_workspace_name
   organization      = var.tfc_organization_name
   terraform_version = var.tfc_workspace_terraform_version
+  tag_names         = var.tfc_workspace_tags
 }

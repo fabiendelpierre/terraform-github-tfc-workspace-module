@@ -82,3 +82,9 @@ variable "tfc_workspace_terraform_version" {
   description = "The version of Terraform to use during the workspace's runs"
   type        = string
 }
+
+variable "tfc_workspace_tags" {
+  description = "A list of tags to assign to the workspace"
+  type        = list(string)
+  default     = []
+}
