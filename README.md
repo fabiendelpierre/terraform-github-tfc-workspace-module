@@ -94,19 +94,19 @@ provider "tfe" {
   token = "..."
 }
 
-# module "test" {
-#   source = "github.com/fabiendelpierre/terraform-github-tfc-workspace-module"
+module "test" {
+  source = "github.com/fabiendelpierre/terraform-github-tfc-workspace-module"
 
-#   github_repo_name        = "foo"
-#   github_repo_description = "..."
+  github_repo_name        = "foo"
+  github_repo_description = "..."
 
-#   github_repo_use_template        = true
-#   github_repo_template_owner_name = "owner-org"
-#   github_repo_template_repo_name  = "template-repo-name"
+  github_repo_use_template        = true
+  github_repo_template_owner_name = "owner-org"
+  github_repo_template_repo_name  = "template-repo-name"
 
-#   tfc_workspace_name    = "foo"
-#   tfc_organization_name = "tfc-org-name"
+  tfc_workspace_name    = "foo"
+  tfc_organization_name = "tfc-org-name"
 
-#   tfc_workspace_terraform_version = "1.0.7"
-# }
+  tfc_workspace_terraform_version = "1.0.7"
+}
 ```
